@@ -27,6 +27,8 @@ ul {
 header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 nav {
