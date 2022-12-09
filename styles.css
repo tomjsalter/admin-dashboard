@@ -48,11 +48,22 @@ nav {
     align-items: center;
     column-gap: 0.8rem;
     row-gap: 0.6rem;
-    /* grid row: repeat auto with min-content for height */
 }
 
 .nav-options > img {
     width: 1.4rem;
+}
+
+.dashboard-title {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    column-gap: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.dashboard-title > img {
+    width: 2.5rem;
 }
 
 main {
