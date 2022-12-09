@@ -12,7 +12,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: minmax(300px, 15%) 1fr;
     grid-template-rows: 1fr 4fr;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -59,7 +59,7 @@ nav {
     grid-template-columns: min-content 1fr;
     align-items: center;
     column-gap: 0.8rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .dashboard-title > img {
