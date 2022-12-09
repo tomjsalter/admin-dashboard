@@ -4,13 +4,20 @@
     margin: 0;
 }
 
+:root {
+    --dash-dark: rgb(19, 34, 34);
+    --dash-yellow: #FFF000;
+    --dash-grey: rgba(211, 211, 211, 0.5);
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
     font-family: 'Roboto', sans-serif;
-    color: rgb(19, 34, 34);
     font-size: 16px;
+    height: 100vh;
+    color: var(--dash-dark);
 }
 
 ul {
@@ -20,21 +27,25 @@ ul {
 header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    background-color: white;
 }
 
 nav {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background-color: #FFF000;
+    background-color: var(--dash-yellow);
     display: grid;
     grid-template-rows: min-content min-content min-content;
-    gap: 30px;
+    gap: 40px;
     padding: 20px;
+}
+
+nav > ul > li {
+    font-size: 1.2rem;
+    line-height: 1.75;
 }
 
 main {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background-color: rgba(211, 211, 211, 0.5);
+    background-color: var(--dash-grey);
 }
