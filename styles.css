@@ -14,7 +14,7 @@
 body {
     display: grid;
     grid-template-columns: minmax(300px, 15%) 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: min-content 4fr;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     height: 100vh;
@@ -29,7 +29,7 @@ header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
 }
 
 .header-nav {
@@ -37,7 +37,7 @@ header {
     grid-template-columns: min-content minmax(200px, 45%) min-content min-content 6rem;
     gap: 20px;
     align-items: center;
-    padding-left: 25px;
+    padding: 25px;
 }
 
 .header-nav > img {
@@ -48,6 +48,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    padding-bottom: 16px;
+    justify-content: end;
 }
 
 .header-profile {
@@ -63,7 +65,26 @@ header {
 }
 
 .header-profile > div > p:last-child {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.header-btns {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 20px;
+}
+
+button {
+    background-color: var(--dash-blue);
+    color: white;
+    border: none;
+    height: 38px;
+    width: 90px;
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.95rem;
 }
 
 #search-bar {
