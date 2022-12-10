@@ -34,9 +34,14 @@ header {
 
 .header-nav {
     display: grid;
-    grid-template-columns: min-content minmax(200px, 45%) min-content min-content min-content;
+    grid-template-columns: min-content minmax(200px, 45%) min-content min-content 6rem;
     gap: 20px;
     align-items: center;
+    padding-left: 25px;
+}
+
+.header-nav img {
+    width: 26px;
 }
 
 #search-bar {
