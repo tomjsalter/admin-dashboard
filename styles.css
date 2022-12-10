@@ -40,8 +40,30 @@ header {
     padding-left: 25px;
 }
 
-.header-nav img {
+.header-nav > img {
     width: 26px;
+}
+
+.header-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.header-profile {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 16px;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.header-profile > img {
+    width: 62px;
+}
+
+.header-profile > div > p:last-child {
+    font-size: 1.3rem;
 }
 
 #search-bar {
