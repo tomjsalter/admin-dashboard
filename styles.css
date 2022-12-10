@@ -8,6 +8,7 @@
     --dash-dark: rgb(31, 19, 34);
     --dash-yellow: #FFF000;
     --dash-grey: rgba(211, 211, 211, 0.5);
+    --dash-blue: #1A92D3;
 }
 
 body {
@@ -29,6 +30,23 @@ header {
     grid-row: 1 / 2;
     display: grid;
     grid-template-rows: 1fr 1fr;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: min-content minmax(200px, 45%) min-content min-content min-content;
+    gap: 20px;
+    align-items: center;
+}
+
+#search-bar {
+    background-color: var(--dash-grey);
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 16px;
+    font-size: 1rem;
+    color: var(--dash-dark);
 }
 
 nav {
