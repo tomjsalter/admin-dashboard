@@ -69,7 +69,7 @@ header {
 
 .header-profile {
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: min-content minmax(200px, 1fr);
     gap: 16px;
     align-items: center;
     padding-left: 25px;
