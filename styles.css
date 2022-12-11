@@ -159,3 +159,9 @@ main {
     grid-template-columns: 2fr 1fr;
     padding: 25px;
 }
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    gap: 20px;
+}
