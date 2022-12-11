@@ -34,7 +34,7 @@ header {
 
 .header-nav {
     display: grid;
-    grid-template-columns: min-content minmax(200px, 45%) min-content min-content 6rem;
+    grid-template-columns: 1fr 1fr ;
     gap: 20px;
     align-items: center;
     padding: 25px;
@@ -42,6 +42,21 @@ header {
 
 .header-nav > img {
     width: 26px;
+}
+
+.header-nav-search {
+    display: grid;
+    grid-template-columns: 1.5rem minmax(200px, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.header-nav-user {
+    display: grid;
+    grid-template-columns: 1.6rem 1.6rem 6rem;
+    align-items: center;
+    gap: 20px;
+    justify-content: end;
 }
 
 .header-actions {
@@ -73,6 +88,8 @@ header {
     display: grid;
     grid-template-columns: repeat(3, min-content);
     gap: 20px;
+    justify-content: end;
+    padding-right: 25px;
 }
 
 button {
